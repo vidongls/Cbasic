@@ -1,33 +1,12 @@
 Câu 1:
   - Không cần phải viết đi viết lại nhiều lần mà có thể tái sử dụng.
+   Dễ quản lý, tìm lỗi chương trình. 
 Câu 2:
   - Có 2 loại hàm: + Hàm có giá trị trả về : Xử lý tính toán rồi trả về giá trị, muốn cho thằng khác sử dụng.
 		  + Hàm không có giá trị trả về : Xử lý tính toán nhưng không muốn trả về giá trị.
 Câu 3:
  return: Thoát hàm và trả về giá trị cho lời gọi hàm.
-Câu 4:
-- in ra màn hình : cout<<height(h); 
-- Tính toán : 2*height(n)+3;
-- Biểu thức điều kiện : (height(h) < 0)?cout<<height(h):cout<<"Khong hop le !";
-- Gán cho biến : int chieu_cao = height(h);	
-Câu 4: 
-  - Tham số hình thức: truyền ở định nghĩa hàm
-  - Tham số thực: truyền trong lời gọi hàm	
-Câu 5:
-  -Tham trị : không có &. tạo bản sao, thay đổi không ảnh hưởng bản gốc.
-  -Tham chiếu: có &. tương tác tại bản gốc, thay đổi giá trị khi lời gọi hàm kết thúc.
-Câu 6:
-  - Hàm được thực thi khi có lời gọi hàm và truyền đúng tham số.
-Câu 7:
- - E chưa biết làm :((
-=======
-Câu 1:
-  - Không cần phải viết đi viết lại nhiều lần mà có thể tái sử dụng.
-Câu 2:
-  - Có 2 loại hàm: + Hàm có giá trị trả về : Xử lý tính toán rồi trả về giá trị, muốn cho thằng khác sử dụng.
-		  + Hàm không có giá trị trả về : Xử lý tính toán nhưng không muốn trả về giá trị.
-Câu 3:
- return: Thoát hàm và trả về giá trị cho lời gọi hàm.
+ return trả về giá 1 giá trị.
 Câu 4:
 - in ra màn hình : cout<<height(h); 
 - Tính toán : 2*height(n)+3;
