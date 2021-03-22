@@ -1,35 +1,37 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 
-int max(int n) {
-	int max = 0;
-	while (n > 0)
-	{
-		int du =n % 10;		
-		if (max < du) {
-			max = du;
+void max_min(int n) {
+	int a;
+	int max;
+	int min;
+	for (int i = 1; i <= n; i++){
+		cout << "Nhap vao phan tu thu : " << i << " = "; cin >> a;
+		if (i == 1)
+		{
+			max = a;
+			min = a;
 		}
-		n /= 10;
-	}
-	return max;
-}
-int min(int n) {
-	int min = n % 10;
-	while (n > 0)
-	{
-		int du = n % 10;
-		if (min > du) {
-			min = du;
+		if (max < a) {
+			max = a;
 		}
-		n /= 10;
+		if (min > a) {
+			min = a;
+		}
 	}
-	return min;
+	cout << "Max la :" << max << endl;
+	cout << "Min la :" << min;
 }
 
-void main(){
+int main() {
 	int n;
-	cout << "Nhap n:" << endl; cin >> n;
-	cout << "Max la:" << max(n) << endl;
-	cout << "Min la:" << min(n);
+	do
+	{
+		cout << "Nhap n:" << endl; cin >> n;
+		if (n < 1)
+		{
+			cout << "Moi nhap lai !" << endl;
+		}
+	} while (n<1);
+	max_min(n);
 }

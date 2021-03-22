@@ -2,10 +2,7 @@
 using namespace std;
 
 int UCLN(int a, int b) {
-	if (a == b) {
-		return a;
-	}
-	else if(a == 0 || b == 0) {
+	if(a == 0 || b == 0) {
 		return a + b;
 	}
 	while (a != b) {
@@ -16,6 +13,7 @@ int UCLN(int a, int b) {
 			b -= a;
 		}
 	}
+	return a;
 }
 void main()
 {

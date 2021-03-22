@@ -6,7 +6,7 @@ Câu 2:
 		  + Hàm không có giá trị trả về : Xử lý tính toán nhưng không muốn trả về giá trị.
 Câu 3:
  return: Thoát hàm và trả về giá trị cho lời gọi hàm.
- return trả về giá 1 giá trị.
+Khi sử dụng câu lệnh return, hàm chỉ có thể trả về một giá trị duy nhất. 
 Câu 4:
 - in ra màn hình : cout<<height(h); 
 - Tính toán : 2*height(n)+3;
