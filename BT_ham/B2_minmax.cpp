@@ -3,8 +3,8 @@ using namespace std;
 
 void max_min(int n) {
 	int a;
-	int max;
-	int min;
+	int max=0;
+	int min=0;
 	for (int i = 1; i <= n; i++){
 		cout << "Nhap vao phan tu thu : " << i << " = "; cin >> a;
 		if (i == 1)

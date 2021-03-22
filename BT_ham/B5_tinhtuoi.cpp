@@ -2,10 +2,9 @@
 using namespace std;
 
 int tuoi(int n) {
-	n = 2021 - n;
-	return n;
+	return 2021 - n;
 }
-void main() {
+int main() {
 	int t;
 	do
 	{
