@@ -21,4 +21,4 @@ Câu 5:
 Câu 6:
   - Hàm được thực thi khi có lời gọi hàm và truyền đúng tham số.
 Câu 7:
- - E chưa biết làm :((
+ - dùng tham chiếu
