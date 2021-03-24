@@ -7,7 +7,13 @@ void socp(int n) {
 }
 int main() {
 	int n;
-	cout << "Moi nhap n: "; cin >> n;
+	do
+	{
+		cout << "Moi nhap n: "; cin >> n;
+		if (n < 0) {
+			cout << "Khong hop le !"<<endl;
+		}
+	} while (n<0);
 	socp(n);
 }
 
