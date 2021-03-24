@@ -1,0 +1,38 @@
+1 . 
+- Khai báo biến : <kdl> <ten_bien>
+- Khai báo hằng :const <ten_hang>=<gia_tri>
+                 #define <ten_hang><gia_tri>
+2. Đúng, sai, đúng, đúng, sai.
+3.
+- Địa chỉ của biến là địa chỉ của ô nhớ.
+- Khi đó nó sẽ yêu cầu hệ điều hành cấp phát một vùng nhớ ngẫu nhiên có độ lớn bằng độ lớn của kiểu dữ liệu của a, cho a quản lý, địa chỉ ô nhớ đầu tiên là địa chỉ của a, nếu bộ nhớ không đủ -> không cấp phát.
+4. sizeof()
+5. Sẽ ra số 89 , vì 'Y'  trong mã ascii bằng 89, vì a là kiểu số nguyên nên sẽ in ra số nguyên.
+6. float(7)/2
+   7*1.0/2
+   7.0/2
+   7/float(2)
+7. Chia lấy nguyên .
+8. 
+++ 
+tiền tố :Tăng giá trị của biến trước rồi mới thực hiện tính toán.
+hậu tố : tính toán rồi mới tăng giá trị.
+--
+tiền tố :Giảm giá trị của biến trước rồi mới thực hiện tính toán.
+hậu tố : tính toán rồi mới giảm giá trị.
+9.
+<btdk>?<dk1>:<dk2>
+biểu thúc điều kiện đúng : chạy dk1 ,sai chạy dk2
+//=========================== BT vận dụng =====================
+BT 1:
+int d = 4;
+int a = 4;
+int c = (d += (a++) * 5)= 24; a= 5; c = 24 ; d =24;
+
+c /= (d++) + (a--) = 24 / (24+5); a =4; c=0; d= 25;
+
+int b = (c++ - ++d) * a++ =(0-26)*4=-104; a= 5; b=-104; c=1; d=26;
+
+BT: viết chương trình giải phương trình bậc 2: ax2 + bx + c = 0
+
+
