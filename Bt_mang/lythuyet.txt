@@ -1,0 +1,9 @@
+1. Mảng là tập hợp các phần tử đồng nhất về kiểu dữ liệu, liên tiếp nhau trong bộ nhớ .
+2. số lượng phần tử tối đa của mảng là giá trị không đổi
+3. Mảng tĩnh : khai báo bao nhiêu dùng bằng đó, không thay đổi, thêm được. 
+ Mảng động :Thay đổi số lượng phần tử linh hoạt
+4. 
+5. int a[7] : khai báo mảng có tối đa 7 phần tử
+   a[0] : truy cập đến phần tử đầucủa mảng 
+6. Là giá trị ngẫu nhiên (giá trị rác)
+7. 
