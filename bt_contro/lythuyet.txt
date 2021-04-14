@@ -1,0 +1,28 @@
+1 .
+- Biến : + địa chỉ :nơi sinh ra.
+	 + vùng nhớ: nơi lưu giá trị, dữ liệu người dùng đưa vào
+- Con trỏ : lưu địa chỉ, con trỏ khi sinh ra không có vùng nhớ để lưu giá trị .
+	+ Địa chỉ : Nơi sinh ra.
+	+ Miền giá trị : nơi lưu địa chỉ nơi nó trỏ tới
+	+ giá trị : giá trị nơi nó trỏ tới
+2 .
+   -int *b = &a; Khai báo một con trỏ b lưu địa chỉ của a
+   - lệnh: cout<<b<<endl; in ra địa chỉ của con trỏ b trỏ tới;
+   - lệnh: cout<<*b<<endl; in ra giá trị nơi nó trỏ tới
+   - lệnh: float *c = a;  Lỗi vì con trỏ lưu địa chỉ chứ không lưu giá trị.
+   - lệnh: a = 15; Thay đổi giá trị tại địa chỉ a = 15;
+3. E không biết làm :((
+4. Linh hoạt....
+5. Kích thước con trỏ bằng kích thước số nguyên (hệ điều hành 32bit là 4byte)
+6. <kieutrave> *<tenham>();
+//============================ Phần 1 ==================
+1. C: các hàm cấp phát nằm ở thư viện: stdlib.h                      2. C: nguyên mẫu hàm của các hàm cấp phát 
+3. 
+4. 
+	+ void *malloc(int size); cấp phát 1 vùng nhớ có kích thước size byte	
+        + void *calloc(int count,int size); Cấp phát count vùng nhớ, mỗi vùng có size byte. mặc định gt = 0
+	+ void *realloc(void *p,int size); - Nếu p = NULL :  cấp phát mới. 				   - Nếu p != NULL : Dựa vào size để thực hiện  nới rộng, thu hẹp.
+	
+5.
+6.
+		
