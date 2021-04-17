@@ -10,24 +10,24 @@ int main()
 	do
 	{
 		cout << "Moi nhap n :";	  cin >> n;
-		if (n<0)
+		if (n <= 0)
 		{
-			cout << "Khong hop le !";
+			cout << "Khong hop le !\n";
 		}
-	} while (n<0);
-	/*int* p = (int*)malloc(sizeof(int));*/
-	int* p = (int*)malloc(sizeof(int));
-	nhap(p,n);
-	xuat(p,n);
-	min_max(p,n);
+	} while (n <= 0);
+	int* p = new int[n];
+	nhap(p, n);
+	xuat(p, n);
+	min_max(p, n);
+	delete[] p;
 }
-void nhap(int *p, int n) {
+void nhap(int* p, int n) {
 	for (int i = 0; i < n; i++)
 	{
-		cout << "Nhap phan tu thu " << i <<": "; cin >> *(p + i);
+		cout << "Nhap phan tu thu " << i << ": "; cin >> *(p + i);
 	}
 }
-void xuat(int *p, int n){
+void xuat(int* p, int n) {
 	for (int i = 0; i < n; i++)
 	{
 		cout << "Phan tu thu " << i << ": " << *(p + i) << endl;
@@ -38,11 +38,11 @@ void min_max(int* p, int n) {
 	int max = *p;
 	for (int i = 0; i < n; i++)
 	{
-		if (max < *(p+i))
+		if (max < *(p + i))
 		{
 			max = *(p + i);
 		}
-		if (min > *(p+i))
+		if (min > *(p + i))
 		{
 			min = *(p + i);
 		}
