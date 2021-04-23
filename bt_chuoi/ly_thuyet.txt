@@ -1,0 +1,6 @@
+//======== Bài Tập LÝ THUYẾT =========
+Bài 1. Trình bày cơ chế cin, gets
+	- cin: chỉ nhận kí tự, không nhận khoảng trắng và xuống dòng
+	- gets: nhận kí tự, nhận khoảng trắng, không nhận xuống dòng
+Bài 2. phân tích lỗi trôi lệnh.
+- Xảy ra khi nhập một kí tự khác chuỗi bằng cin trước nhập chuỗi;
