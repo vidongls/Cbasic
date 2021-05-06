@@ -1,0 +1,19 @@
+1, Struct là kiểu dữ liệu cấu trúc do lập trình viên tự tạo.
+2. Cú pháp khai báo struct: struct <tencautruc>
+			    {
+				<kdl tp 1> <tên tp 1>;
+				<kdl tp 2> <tên tp 2>;
+				...
+				<kdl tp n> <tên tp n>;
+			     };
+3. Có thể khai báo struct dưới hàm main.
+ - vì nó là kiểu dữ liệu có thể khai báo như biến cục bộ hoặc toàn cục.
+4. dòng typedef có chức năng định nghĩa được tên mới cho các kiểu mà người dùng định nghĩa, ngắn hơn, gọn hơn, dễ hiểu, dễ sử dụng.
+5. khi nào dùng sao chép bằng toán tử gán khi nào dùng gán lần lượt ? vì sao ?
+- Dùng toán tử gán khi không dùng con trỏ muốn gán giá trị.
+- Dùng gán lần lượt khi dùng con trỏ muốn thay đổi giá trị chứ không phải miền giá trị.
+6. biến kdl struct cần tham chiếu khi cập nhật giá trị thay đổi trong hàm.
+7. Nếu trong cấu trúc mà có biến con trỏ thì ta nên chú ý việc gì(đáp án gồm 3 ý - cố gắng trả lời đủ 3)
+- Nhớ cấp phát khi sử dụng biến con trỏ
+- Không sử dụng toán tử gán- mà phải tự build lại toán tử gán, gán giá trị cho nhau
+- Có cấp phát - có giải phóng.
