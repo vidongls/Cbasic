@@ -17,7 +17,6 @@ int ucln(int a, int b);
 void rut_gon(ps& p);
 void rut_gon_ds(ps ds_phanso[], int n);
 ps max_phanso(ps ds_phanso[], int n);
-ps tong_phanso(ps ps1, ps ps2);
 ps tong_ds_phanso(ps ds_phanso[], int n);
 void them_ps(ps ds_phanso[], int& n, int vt, ps x);
 void xoa_ps(ps ds_phanso[], int& n, int vt);
@@ -152,16 +151,15 @@ void xuat_ds_phanso(ps ds_phanso[], int n) {
 		cout << "Phan so thu " << i <<" la: ";
 		xuat(ds_phanso[i]);
 	}
-}				   
+}
 int ucln(int a, int b) {
-	int tam = 0;
-	while (a % b != 0)
+	a = abs(a);
+	b = abs(b);
+	while (a != b)
 	{
-		tam = a % b;
-		a = b;
-		b = tam;
+		(a > b) ? a = a - b : b = b - a;
 	}
-	return b;
+	return a;
 }
 void rut_gon(ps &p) {
 	int luu_uc = ucln(p.tuso, p.mauso);
