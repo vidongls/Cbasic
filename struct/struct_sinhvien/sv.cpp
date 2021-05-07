@@ -19,6 +19,8 @@ void xuat_ds_sv(sv ds_sv[], int n);
 //----------------------
 void sapxep_dtb(sv ds_sv[], int n);
 //------------------------
+void chuan_hoa(string& str);
+//=====-----------------------
 istream& operator >> (istream& is, sv& s);
 ostream& operator << (ostream& os, sv s);
 int main()
@@ -98,6 +100,7 @@ void nhap_ds_sv(sv ds_sv[], int n) {
 	}
 }
 ostream& operator << (ostream& os, sv s) {
+	chuan_hoa(s.hoten);
 	cout << "Ho ten: " <<  s.hoten << endl;
 	cout << "Gioi tinh: " << s.gioitinh << endl;
 	cout << "Tuoi: " << s.tuoi << endl;
@@ -124,3 +127,41 @@ void sapxep_dtb(sv ds_sv[],int n){
 		}
 	}
 }	
+void chuan_hoa(string& str)
+{
+	while (str[0] == ' ')
+	{
+		str.erase(str.begin() + 0);
+	}
+	while (str[str.length() - 1] == ' ')
+	{
+		str.erase(str.begin() + (str.length() - 1));
+	}
+	for (int i = 0; i < str.length(); i++)
+	{
+		if (str[i] == ' ' && str[i + 1] == ' ')
+		{
+			str.erase(str.begin() + i);
+			i--;
+		}
+	}
+	for (int i = 0; i < str.length(); i++)
+	{
+		if (str[i] >= 65 && str[i] <= 90)
+		{
+			str[i] += 32;
+		}
+	}
+	if (str[0] >= 97 && str[0] <= 122) str[0] -= 32;
+	for (int i = 1; i < str.length() - 1; i++)
+	{
+
+		if (str[i] == ' ' && str[i + 1] != ' ')
+		{
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			{
+				str[i + 1] -= 32;
+			}
+		}
+	}
+}
