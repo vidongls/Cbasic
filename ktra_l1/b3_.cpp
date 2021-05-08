@@ -1,4 +1,4 @@
-﻿ï»¿#include <iostream>
+﻿#include <iostream>
 #include<string>
 #include<fstream>
 using namespace std;
@@ -170,10 +170,8 @@ void xuat_diem(sv s)
 }
 void xuat_diem_ds(sv ds_sv[], int n)
 {
-	cout << "\t\t======== XUAT =========" << endl;
 	for (int i = 0; i < n; i++)
 	{
-		cout << "\t\t----------- SV " << i << " ---------" << endl;
 		xuat_diem(ds_sv[i]);
 	}
 }
