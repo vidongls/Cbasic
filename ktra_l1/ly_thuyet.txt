@@ -1,0 +1,10 @@
+//-------------- Lý thuyết --------------
+1. Lưu ý khi sử dụng hàm.
+	- Tham số là con trỏ : có sự thay đổi miền giá trị nếu muốn lưu thì tham chiếu
+	- Tham số là biến : có sự thay đổi nếu muốn lưu thì tham chiếu
+	- Hàm lồng hàm : Tham số cha trùng tham số con, tham số con thay đổi nếu muốn lưu thì tham chiếu
+2. Trình bày lưu ý khi sử dụng getline()
+	- Nếu nhập trước là kiểu khác string thì xoá bộ nhớ đệm
+3. Trình bày lưu ý khi sử dụng kdl struct.
+	- Nếu có biến con trỏ : Cấp phát - giải phóng
+				Không được dùng toán tử gán mà phải viết lại, vì gán giá trị cho nhau
