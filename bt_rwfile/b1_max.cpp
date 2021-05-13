@@ -10,10 +10,8 @@ int main()
 {
 	int a[100], n = 0;
 	doc_file(a, n);
-	n = a[0];
-	cout << n;
 	xuat(a, n);
-	cout << "Max la :" << max(a,n)<<endl;
+	cout << "Max la :" << max(a, n) << endl;
 	//ghi_file(a, n);
 	system("pause");
 }
@@ -33,25 +31,26 @@ void doc_file(int a[], int& n)
 		return;
 	}
 	//B3 : Đọc file
-	while (filein.eof() == false)
+	filein >> n;//5
+	for (int i = 0; i < n; i++)
 	{
-		filein >> a[n++];
+		filein >> a[i];
 	}
+
 	//B4 : Đóng file
 	filein.close();
-
 }
 void xuat(int a[], int n)
 {
 	cout << "\t\t====== xuat ======" << endl;
-	for (int i = 1; i < n + 1; i++)
+	for (int i = 0; i < n; i++)
 	{
 		cout << "PT thu " << i << " la: " << a[i] << endl;
 	}
 }
 int max(int a[], int n) {
-	int max = a[1];
-	for (int i = 1; i < n + 1; i++)
+	int max = a[0];
+	for (int i = 0; i < n; i++)
 	{
 		if (max < a[i])max = a[i];
 	}
