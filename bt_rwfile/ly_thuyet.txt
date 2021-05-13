@@ -1,0 +1,8 @@
+1. trình bày đường dẫn tương đối, và đường dẫn tuyệt đối.
+	- Đường dẫn tương đối bắt đầu đi từ thư mục hiện tại. 
+	-một đường dẫn tuyệt đối là đường dẫn bắt đầu bởi / và tiếp theo sau đó là chuỗi các thư mục mà nó đi xuyên qua cho đến khi tới đích
+2. Nhận xét Đúng SAi:
+a) Đọc file sau khi được đóng file, thì lần đọc file sau con trỏ sẽ trỏ về đầu.
+- Đúng.
+b) Ghi file sau khi được đóng file, thì kết quả ghi file lần sau sẽ ghi tiếp vào file kết quả
+- Sai
