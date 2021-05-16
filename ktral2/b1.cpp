@@ -206,23 +206,21 @@ void them_hoan_thien(int* &p, int &n) {
 }
 int so_dao(int n){
 	int dao = 0, du;
-
 	while (n != 0)
 	{
-
 		du = n % 10;
 		dao = (dao * 10) + du;
 		n = n / 10;
 	}
-
 	return dao;
 }
 bool check_doi_xung(int n) {
-	if(n == so_dao(n)) return true;
-	return false;
+	if (n > 9) {
+	  if(n == so_dao(n)) return true;
+	}
+	return false;	
 }
 void xoa_doi_xung(int* &p,int &n) {
-
 	for (int i = 0; i < n; i++)
 	{
 		if (check_doi_xung(p[i])) {
