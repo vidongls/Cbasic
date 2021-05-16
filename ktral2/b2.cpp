@@ -24,12 +24,11 @@ void load_file(sv s[], int& n)
 {
 	ifstream filein;
 	filein.open("sv.txt", ios_base::in);
-	if (filein.fail())cout << "ngu";
 	while (true)
 	{
 		sv acc;		
 		getline(filein, acc.account, ',');
-		getline(filein, acc.password, '\n');
+		getline(filein, acc.password);
 		s[n++] = acc;
 		if (filein.eof() == true)
 		{
